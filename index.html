@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e1116">
+  <title>Praneshwar Govind Das - Counselling</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="brand">
+        <span class="brand-mark">PGD</span>
+        <span class="brand-text">Praneshwar Govind Das</span>
+      </a>
+      <nav class="site-nav">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">🌙</button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#approach">Approach</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-pressed="false">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1>Compassionate Counselling for Real-Life Challenges</h1>
+          <p>Personalized, confidential support to help you navigate stress, relationships, and life transitions.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Book a Session</a>
+            <a href="#services" class="btn btn-ghost">Explore Services</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-illustration"><img src="assets/img.jpg" alt="Praneshwar Govind Das" width="300" height="360"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <div class="grid two">
+          <div>
+            <h2>About Praneshwar</h2>
+            <p>With a client-centered approach, I provide a calm, non-judgmental space for you to be heard. My work integrates evidence-informed techniques with mindful practices for practical change.</p>
+            <ul class="checklist">
+              <li>Confidential, empathetic listening</li>
+              <li>Action-oriented strategies</li>
+              <li>Flexible online sessions</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Areas of Focus</h3>
+            <ul class="checklist">
+              <li>Stress and anxiety</li>
+              <li>Relationships and communication</li>
+              <li>Life transitions</li>
+              <li>Habit change</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards three">
+          <div class="card">
+            <h3>Individual Counselling</h3>
+            <p>One-on-one sessions tailored to your goals. 50 minutes. Online or in-person.</p>
+            <p class="price">₹1,500 / session</p>
+          </div>
+          <div class="card highlight">
+            <h3>Couples Counselling</h3>
+            <p>Improve communication and strengthen your relationship. 75 minutes.</p>
+            <p class="price">₹2,400 / session</p>
+          </div>
+          <div class="card">
+            <h3>Workshops</h3>
+            <p>Group-based learning on stress management, mindfulness, and communication.</p>
+            <p class="price">Custom pricing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="approach" class="section alt">
+      <div class="container">
+        <div class="grid two">
+          <div>
+            <h2>My Approach</h2>
+            <p>I combine practical tools with compassionate inquiry, using CBT-informed strategies, motivational interviewing, and mindfulness-based techniques.</p>
+          </div>
+          <div>
+            <h3>What to Expect</h3>
+            <p>We'll clarify your goals, co-create a plan, and review progress regularly. You'll receive tools and reflections to continue growth between sessions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2>Testimonials</h2>
+        <div class="carousel">
+          <figure class="testimonial is-active">
+            <blockquote>I felt truly heard. The tools I learned continue to help me daily.</blockquote>
+            <figcaption>Client, 2024</figcaption>
+          </figure>
+          <figure class="testimonial">
+            <blockquote>Compassionate, practical, and insightful support.</blockquote>
+            <figcaption>Client, 2025</figcaption>
+          </figure>
+          <div class="carousel-controls">
+            <button class="prev">←</button>
+            <button class="next">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container">
+        <div class="grid two">
+          <div>
+            <h2>Book a Session</h2>
+            <p>Use the form to request an appointment. I'll reply within one business day.</p>
+            <form id="contact-form" action="https://formspree.io/f/xqalrqkw" method="POST">
+              <div class="form-field">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+                <span id="error-name" class="error"></span>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span id="error-email" class="error"></span>
+              </div>
+              <div class="form-field">
+                <label for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <span id="error-message" class="error"></span>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Send Request</button>
+                <span id="form-status" class="form-status"></span>
+              </div>
+            </form>
+          </div>
+          <div>
+            <h3>Contact Me Directly</h3>
+            <div class="contact-actions">
+              <a href="https://wa.me/919168523331?text=Hello%20Praneshwar,%20I%20would%20like%20to%20book%20a%20session" class="btn btn-primary" target="_blank">
+                <span class="icon">📱</span> WhatsApp
+              </a>
+              <a href="tel:+919168523331" class="btn btn-ghost">
+                <span class="icon">☎️</span> Call
+              </a>
+              <a href="mailto:praneshwargovinddas@gmail.com?subject=Session%20Request" class="btn btn-ghost">
+                <span class="icon">✉️</span> Email
+              </a>
+            </div>
+            <ul class="checklist">
+              <li>Hours: Mon–Sat, 9:00–18:00 IST</li>
+              <li>Location: Online and in-person by appointment</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Praneshwar Govind Das. All rights reserved.</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
